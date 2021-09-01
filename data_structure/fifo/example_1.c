@@ -27,7 +27,7 @@ int example_1(void)
    	fifo_t fifo;		
 	createFifo(&fifo, MAS_LENGHT, mas, sizeof(uint16_t));
 	
-	for(uint8_t i; i < MAS_LENGHT1; i++)
+	for(uint8_t i; i < MAS_LENGHT; i++)
 	{
 		data[i] = i;
 		writeFifo (&fifo, (void *)(&data[i]));
